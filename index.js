@@ -5,6 +5,8 @@ const expressHbs = require("express-handlebars");
 const { createPagination } = require("express-handlebars-paginate");
 
 app.use(express.static(__dirname + "/html"));
+app.use(express.static(__dirname + "/views"));
+
 app.engine(
   "hbs",
   expressHbs.engine({
